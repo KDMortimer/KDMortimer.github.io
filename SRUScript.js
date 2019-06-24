@@ -48,7 +48,7 @@ $(document).ready(function() {
 								suggestedName = suggestedName + ';<br/>' + suggestedNameBundle[j].childNodes[0].nodeValue;
 							}
 						}
-						var tblRow = "<tr class='row'>" + "<td>" + authName + "</td>" + "<td>" + suggestedName + "</td>" + "<td>" + fastID + "</td>" + "</tr>";
+						var tblRow = '<tr class="row"><td>' + authName + '</td><td>' + suggestedName + '</td><td> <a href="http://id.worldcat.org/fast/' + fastID + '">' + fastID + '</a></td></tr>';
 						//+ "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
 						$(tblRow).appendTo("#OutputData tbody");
 					}
